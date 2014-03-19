@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+            <link rel="stylesheet" href="css/style.css" />
+            <link rel="stylesheet" href="css/styled.css" />
+    <meta charset="utf-8"> 
+
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCx9Mu2TYQpEA-RMcJF12z7Ze6cfXnljyg&sensor=false">
+    </script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" ></script>   
+
+  </head>
+  <body>
+    <div id="the-map">
+            <div class="map-chapters">
+              <div class="map-chapter">
+                <div id="intro">
+                <h1>Follow Christopher Pollon on The Copper Road</h1>
+
+        <p>Forget gold. Copper is worth much more to British Columbia as an export. The red metal ends up in smart phones,  in cars, in plumbing and house wiring—as well as in  landfills. How does it get there? Tyee Contributing Editor  Christopher Pollon wanted to find out. So he set out on  the Copper Road—from B.C. to Asia and back. <a href="">Follow his journey</a>.</p>
+        </div>
+      </div>
+      <div class="map-chapter">
+        <div id="chapter-one">
+        <h1>Chapter One: The Mine</h1>
+        <p>
+Christopher Pollon began his investigation just a few kilometers south of Princeton, B.C.. Six billion dollars worth of ore have been dug from the rightly named <span class="marker" id="copper">Copper Mountain area</span> over the last century. Today, trucks the size of bungalows haul rock to be crushed for its red metal content. 
+ </p>
+ <p class="story-link"><a href="">Full story on The Tyee</a> </p>
+
+        </div>
+      
+      </div>
+
+      <div class="map-chapter">
+        <div id="chapter-two">
+        <h1>Chapter Two: The Money</h1>
+
+
+        <p>
+The next stop on Christopher Pollon's road was <span class="marker" id="mining-district">Vancouver,</span> a motherlode of mine financing. With Toronto, the city capitalizes three-fifths of the entire world's mines. It's here that cash may come from to dig even more B.C. copper, from the <span class="marker" id="kerr">Kerr-Sulphrets-Mitchell</span>, <span id="galore">Galore</span> and <span id="schaft">Schaft Creek</span> strikes. Read more
+        </p>
+        <p class="story-link"><a href="">Full story on The Tyee</a> </p>
+
+      </div>
+
+       
+      </div>
+
+      <div class="map-chapter">
+        <div id="chapter-three">
+
+        <h1>Chapter Three: The Smelter</h1>
+        <p>
+Pursuing B.C.’s copper Christopher Pollon crossed the Pacific. Landing at <span id="osaka">Osaka, Japan</span>, he grabbed a bullet train and then a ferry to <span id="naoshima">Naoshima Island</span>, where furnaces have been melting ore down into pure metal for almost a century. Only one of Japan’s own metal mines is still active, at <span id="hishikari">Hishikari</span>.   </p>
+<p class="story-link"><a href="">Full story on The Tyee</a> </p>
+
+
+        </div>
+       
+      
+      </div>
+
+      <div class="map-chapter">
+        <div id="chapter-four">
+          <h1>Chapter Four: The Factory</h1>
+        <p>It was a short hop for Christopher Pollon, and the metal he’s following, from Japan across the East China Sea to the factory city of <span id="kunshan">Kunshan, China</span>. There B.C. copper finds its way into components used to make popular electronics. The Shanghai suburb is trying to hold off competition from up-and-coming centres inland: <span id="yunnan">Yunnan</span>, <span id="chengdu">Chengdu</span> and <span id="chonqing">Chonqing</span>.
+        </p>
+<p class="story-link"><a href="">Full story on The Tyee</a> </p>
+
+        </div>
+
+      </div>
+
+      <div class="map-chapter">
+        <div id="chapter-five">
+        <h1>Chapter Five: The Scrapyard</h1>
+
+        <p>
+
+
+    Back on this side of the Pacific, Christopher Pollon tracked what becomes of manufactured copper when its useful life is over. In B.C.'s Peace country, gas fields are generating plenty of scrap metal. Consolidated at <span id="abc">A.B.C. Recycling</span>, used copper competes head-to-head with virgin ore from mines like Alaska’s planned giant <span id="pebble">Pebble Mine</span>.         </p>
+<p class="story-link"><a href="">Full story on The Tyee</a> </p>
+      </div>
+
+        <label class="fifth-set"><input type="checkbox" id="fifth_set" checked="checked"> Show Pins</label>
+      </div>
+
+      <div class="map-chapter">
+        <div id="chapter-six">
+           <h1>Chapter Six: The Recycler</h1>
+        <p>
+Back in the Lower Mainland, urbanites go through their cell phones in about a year; laptops in two or three. Christopher Pollon followed the stream of turned-in-for-recycling electronics to suburban Langley, where cell phones are collected for recycling at <span id="sims">Sims Canada</span>. Some of the copper ends up back at Naoshima island.      </p>
+
+<p class="story-link"><a href="">Full story on The Tyee</a> </p>
+
+              </div>
+
+      
+      
+</div>
+    </div>
+
+     
+    <div id="map-canvas">
+      
+
+    </div>
+     <div id="info-panel" style="display:none;">
+        <div class="close">x</div>
+        <div class="content">
+        <h1>Follow Christopher Pollon on The Copper Road</h1>
+
+        <p>Forget gold. Copper is British Columbia's most lucrative mineral export. The red metal ends up in smart phones,  in cars, in plumbing and house wiring—as well as in  landfills. How does it get there? Tyee Contributing Editor  Christopher Pollon wanted to find out. So he set out on  the Copper Road—from B.C. to Asia and back. <a href="">Follow his journey<a>.
+      </div>
+    </div>
+  </div><!--themap -->
+
+
+    
+    
+
+<script src="js/mapped.js"></script>
+
+<script>
+$("#info-panel .close").click(function() {
+    // alert("yes!");
+    $("#info-panel").fadeOut();
+});
+
+
+</script>
+
+
+  </body>
+</html>

@@ -1,0 +1,165 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ }
+body {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+#the-map {
+	position: relative;
+}
+
+#map-canvas {
+	margin-left:315px;
+	
+}
+
+#info-panel img {
+    max-width: 95%;
+    margin: 2.5%;
+}
+
+.pin-name {
+	display:block;
+	cursor: pointer;
+}
+
+#info-panel {
+	position: absolute;
+	z-index: 99;
+	bottom: 0;
+	right:0;
+	width:215px;
+	background: #ffffff;
+	background: rgba(254,254,254,.8);
+	border: 1px solid #dedede;
+	height: 100%;
+	padding: 5px;
+	padding-bottom: 0;
+} 
+#info-panel .content {
+	overflow-y: auto;
+	height: 100%;
+}
+.close {
+float: left;
+font-size: 21px;
+font-weight: 700;
+line-height: 1;
+color: #000;
+text-shadow: 0 1px 0 #fff;
+opacity: .2;
+filter: alpha(opacity=20);
+}
+
+.close:hover {
+	cursor: pointer;
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+
+button {
+border: 1px solid #dedede;
+border-radius: 5px;
+background: white;
+font-size: 1.3em;
+padding: 3px 8px;
+cursor: pointer;
+}
+
+button:hover, button.active {
+background: #f6ff66;
+background: rgba(246, 255, 102, .3);
+}
+
+button.active {
+background: #66faff;
+background: rgba(102, 250, 255, .3);
+}
+.map-chapters {
+	position: absolute;
+background: #f6f6f6;
+overflow-y: auto;
+z-index: 1000;
+height: 535px;
+overflow-x: hidden;
+}
+.map-chapter {
+	cursor: pointer;
+	padding: 15px;
+}
+
+.map-chapter p {
+	display:none;
+
+
+}
+.map-chapter {
+	display:block;
+	width:310px;
+	margin:3px;
+	padding:5px;
+	border: 1px solid #dedede;
+	border-radius: 5px;
+}
+
+.map-chapter label {
+	display:block;
+	margin: -5px;
+	padding: 5px;
+}
+
+.map-chapter h1 {
+	margin: -5px;
+	padding: 5px;
+}
+label.first-set, #chapter-one h1 {
+	background: #6bb372;
+	margin: -5px;
+	padding: 5px;
+}
+
+.map-chapter label {
+	display:none;
+}
+
+label.second-set, #chapter-two h1 {
+	background: #334D5C;
+	color: #ffffff;
+}
+label.third-set, #chapter-three h1 {
+	background: #45B29D;
+}
+label.fourth-set, #chapter-four h1 {
+	background: #EFC94C;
+}
+label.fifth-set, #chapter-five h1 {
+	background: #E27A3F;
+}
+
+label.sixth-set, #chapter-six h1 {
+	background: #DF5A49;
+}
+
+h1 {
+font-size: 1.3em;
+margin: 0.67em 0;
+font-weight: 200;
+}
+
+.map-chapter span, a, a:visited {
+color: #09C;
+background: white;
+padding: 0 2px;
+text-decoration:none;
+}
+.map-chapter span:hover, a:hover {
+text-decoration: underline;
+}
+
+.story-link a:after {
+	content:'\2192';
+}
+
+.map-chapter p {
+	padding-right: 1em;
+}
